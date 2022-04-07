@@ -1,4 +1,3 @@
-from re import L
 import pandas as pd
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
@@ -10,6 +9,9 @@ data = df['reading_time'].tolist()
 
 pp_mean = stats.mean(data)
 pp_std_dev = stats.stdev(data)
+
+print("Population Mean: ", pp_mean)
+print("Population Standard Deviation: ", pp_std_dev)
 
 def random_sets_of_mean(counter):
     dataset = []
